@@ -1,11 +1,38 @@
-* {
+body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
+  background-color: #eaecf1;
 }
 
 .container {
   background-color: #eaecf1;
   height: 100vh;
+}
+
+.comment {
+  background-color: white;
+  margin: 1em 0 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: .5em;
+}
+
+.comment .comment__container {
+  margin-left: 1em;
+}
+
+.comment .comment__container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */

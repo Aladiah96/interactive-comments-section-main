@@ -8,6 +8,7 @@ body {
 .container {
   background-color: #eaecf1;
   height: 100vh;
+  width: 50%;
 }
 
 .comment {

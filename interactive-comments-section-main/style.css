@@ -9,6 +9,7 @@ body {
   background-color: #eaecf1;
   height: 100vh;
   width: 50%;
+  background-color: red;
 }
 
 .comment {
@@ -21,6 +22,9 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
   padding: .5em;
 }
 
@@ -29,6 +33,49 @@ body {
 }
 
 .comment .comment__container__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.replyContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 0;
+}
+
+.replyContainer .reply {
+  background-color: white;
+  margin: 1em 0 1em 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  padding: .5em;
+}
+
+.replyContainer .reply .reply__container {
+  margin-left: 1em;
+}
+
+.replyContainer .reply .reply__container__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
